@@ -1,0 +1,33 @@
+.menu {
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 16.66%;
+}
+.no-border th,
+.no-border td {
+    padding: 0.25rem;
+    vertical-align: middle;
+}
+
+.trx {
+    max-height: 400px;
+    position: relative;
+    overflow: auto;
+}
+.trx > table th {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+}
+
+@import '../node_modules/bulma/sass/utilities/initial-variables.sass';
+$primary: #00796B;
+$menu-item-active-background-color: $primary;
+$menu-item-radius: $radius-large;
+@import '../node_modules/bulma/bulma.sass';
+.button {
+    border-radius: 3px !important;
+}
